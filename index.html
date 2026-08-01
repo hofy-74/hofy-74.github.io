@@ -796,7 +796,7 @@
   setTimeout(typeConsole, 500);
 
   // CV download — embedded PDF
-  document.getElementById('viewCvBtn').addEventListener('click', function(e){
+  document.addEventListener('DOMContentLoaded', function (){
     e.preventDefault();
     try {
       const byteChars = atob(b64);
